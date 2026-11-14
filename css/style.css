@@ -1,0 +1,157 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: #f0f5fa;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Form box */
+.form-box {
+    background: white;
+    max-width: 450px;
+    margin: auto;
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #0878b9;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Input groups */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+    outline: none;
+}
+
+/* Input focus */
+.input-group input:focus {
+    border-color: #0878b9;
+    box-shadow: 0 0 5px rgba(8, 120, 185, 0.2);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 13px;
+
+    background: #0878b9;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(8, 120, 185, 0.25);
+}
+
+/* Button hover */
+button:hover {
+    background: #065d91;
+    box-shadow: 0 5px 12px rgba(8, 120, 185, 0.4);
+}
+
+/* Bottom text */
+.bottom-text {
+    text-align: center;
+    margin-top: 22px;
+    color: #555;
+}
+
+.bottom-text a {
+    color: #0878b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
+}
+
+/* PHP messages */
+.message {
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+
+    .form-box {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+}
