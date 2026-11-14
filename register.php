@@ -155,6 +155,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="input-group">
 
+    <label>Register As</label>
+
+    <select name="role" id="role" required>
+
+        <option value="">Select Account Type</option>
+
+        <option value="doctor">Doctor</option>
+
+        <option value="patient">Patient</option>
+
+    </select>
+
+</div>
+
+                <div class="input-group">
+
                     <label>Email Address</label>
 
                     <input
@@ -194,6 +210,64 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     >
 
                 </div>
+
+                <div class="input-group">
+
+    <label>Phone</label>
+
+    <input type="text" name="phone" placeholder="Phone number">
+
+</div>
+
+<div class="input-group">
+
+    <label>Address</label>
+
+    <input type="text" name="address" placeholder="Your address">
+
+</div>
+
+<div class="input-group">
+
+    <label>Gender</label>
+
+    <select name="gender">
+
+        <option value="">Select Gender</option>
+
+        <option value="Male">Male</option>
+
+        <option value="Female">Female</option>
+
+        <option value="Other">Other</option>
+
+    </select>
+
+</div>
+
+<div class="input-group">
+
+    <label>Date of Birth</label>
+
+    <input type="date" name="date_of_birth">
+
+</div>
+
+<div class="input-group">
+
+    <label>Specialization (Doctors only)</label>
+
+    <input type="text" name="specialization">
+
+</div>
+
+<div class="input-group">
+
+    <label>License Number (Doctors only)</label>
+
+    <input type="text" name="license_number">
+
+</div>
 
                 <button type="submit" name="register">
                     Register

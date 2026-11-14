@@ -42,9 +42,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             session_regenerate_id(true);
 
-            $_SESSION["user_id"] = $user["id"];
-            $_SESSION["full_name"] = $user["full_name"];
-            $_SESSION["role"] = $user["role"];
+$_SESSION["user_id"] = $user["id"];
+$_SESSION["full_name"] = $user["full_name"];
+$_SESSION["role"] = $user["role"];
+
+session_regenerate_id(true);
+
+if ($user["role"] === "admin") {
+
+    header("Location: admin/dashboard.php");
+    exit();
+
+}
+
+elseif ($user["role"] === "doctor") {
+
+    header("Location: doctor/dashboard.php");
+    exit();
+
+}
+
+elseif ($user["role"] === "patient") {
+
+    header("Location: patient/dashboard.php");
+    exit();
+
+}
+
+else {
+
+    $message = "Your account does not have a dashboard yet.";
+    $messageType = "error";
+
+}
 
             $message = "Welcome, " .
                 htmlspecialchars($user["full_name"]) .
